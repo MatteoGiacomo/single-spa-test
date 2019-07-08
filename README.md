@@ -26,6 +26,4 @@ The page will reload if you make edits.<br>
 
 
 ### next steps:
-- refactor App.js --> avoid setTimeout, make setComponentState more readable 
-- implement unit tests with Jest
-- refactor css --> add sass
+- add 
