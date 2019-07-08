@@ -26,4 +26,6 @@ The page will reload if you make edits.<br>
 
 
 ### next steps:
-- add 
+- add SystemJs to slip modules
+- more complex application with state (Redux and Vuex)
+- adding internal routing (vueRoute)
