@@ -4,7 +4,7 @@ import singleSpaReact from 'single-spa-react';
 import Home from './dashboard.js';
 
 function domElementGetter() {
-	return document.getElementById("userDashboard")
+	return document.getElementById("dashboard")
 }
 
 const reactLifecycles = singleSpaReact({

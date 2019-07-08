@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="home">
         <div :class="$style.wrapper">
             <h1>{{ text }}</h1>
             <span
@@ -19,7 +19,8 @@
 </template>
 
 <script>
-    import { navigateToUrl, unloadApplication } from 'single-spa'
+import { navigateToUrl, unloadApplication } from 'single-spa'
+
 export default {
     name: 'Home',
     data () {
@@ -29,9 +30,7 @@ export default {
     },
     methods: {
         redirect(page) {
-        	console.log('testing click: ', page)
-        	console.log('testing url: ', `${window.location.host}/${page}`)
-	        unloadApplication('home')
+            unloadApplication('home')
                 .then(() => navigateToUrl(`/${page}`))
         }
     }

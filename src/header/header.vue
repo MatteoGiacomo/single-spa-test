@@ -1,6 +1,7 @@
 <template>
     <div :class="$style.wrapper">
         <span>{{ text }}</span>
+        <div>{{ `ti sei spostata su: ${routing}` }}</div>
     </div>
 </template>
 
@@ -9,9 +10,15 @@
 		name: 'Header',
 		data () {
 			return {
-				text: 'Header: vue app'
+				text: 'Header: vue app',
+                routing: ''
 			}
-		}
+		},
+        mounted() {
+            window.addEventListener('single-spa:before-routing-event', e => {
+            	this.routing = e.target.location.pathname
+            })
+        }
 	}
 </script>
 

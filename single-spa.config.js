@@ -2,13 +2,13 @@ import { registerApplication, start } from 'single-spa'
 
 registerApplication(
 		'markets',
-		() => import('./src/vue/vue.app.js'),
+		() => import('./src/markets/vue.app.js'),
 		() => location.pathname === "/markets"
 )
 
 registerApplication(
 		'dashboard',
-		() => import('./src/react/main.app.js'),
+		() => import('./src/dashboard/main.app.js'),
 		() => location.pathname === "/dashboard"
 )
 

@@ -1,22 +1,24 @@
 <template>
-    <div :class="$style.wrapper">
-        <h1>{{ testing }}</h1>
-        <span
-            :class="$style.button"
-            @click="redirect"
-        >
+    <div id="markets">
+        <div :class="$style.wrapper">
+            <h1>{{ text }}</h1>
+            <span
+                :class="$style.button"
+                @click="redirect"
+            >
             Home
         </span>
+        </div>
     </div>
 </template>
 
 <script>
     import { navigateToUrl } from 'single-spa'
 export default {
-    name: 'vue-component',
+    name: 'Markets',
     data () {
     	return {
-    		testing: 'Hello from Vue'
+    		text: 'Hello from Vue'
         }
     },
     methods: {
