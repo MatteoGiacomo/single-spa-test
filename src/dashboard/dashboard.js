@@ -5,7 +5,7 @@ export default class Dashboard extends Component {
 	constructor (props) {
 		super (props)
 		this.state = {
-			text: 'Dashboard: dashboard app'
+			text: 'Dashboard: react app'
 		}
 
 		this.redirect = this.redirect.bind(this)
